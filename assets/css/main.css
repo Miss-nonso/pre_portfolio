@@ -1960,13 +1960,15 @@ input[type="email"] {
 }
 
 .image:before {
-  background: url("images/overlay.png");
+  /* background: url("images/overlay.png"); */
+  background: #ffffff22;
   content: "";
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  border-radius: 12px;
 }
 
 .image.fit {
@@ -2080,7 +2082,7 @@ input[type="email"] {
 
 .icon.circle.fa-mail {
   background: whitesmoke;
-  color: black;
+  color: white;
 }
 
 .icon.circle.fa-dribbble {
@@ -2137,11 +2139,11 @@ ul.icons {
   cursor: default;
 }
 
-ul.icons li {
+/* ul.icons li {
   display: inline-block;
   line-height: 1em;
   padding-left: 0.5em;
-}
+} */
 
 ul.icons li:first-child {
   padding-left: 0;
@@ -2539,6 +2541,7 @@ button.small,
   top: 0;
   width: 100%;
   z-index: 10000;
+  height: 5em;
 }
 
 #header h1 {
@@ -2564,6 +2567,7 @@ button.small,
 #header nav ul {
   list-style: none;
   padding-left: 0;
+  padding-top: 0.5rem;
 }
 
 #header nav ul li {
@@ -2844,11 +2848,15 @@ button.small,
   text-decoration: none;
 }
 
-#banner .inner .icons {
+#banner .inner .icons,
+ul.icons {
   margin: 2em 0 0 0;
-  /* background: #ffffff; */
-  /* max-width: 100px; */
   color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+  padding-inline: 0.5rem;
 }
 
 #banner .inner .button:hover {
@@ -2909,7 +2917,8 @@ body.index #main {
 /* Footer */
 
 #footer {
-  background: #e8eef4;
+  /* background: #e8eef4; */
+  background-color: #1c2021;
   color: #7c8081;
   padding: 5em 5em 10em 5em;
   text-align: center;
@@ -3345,7 +3354,7 @@ body.index #main {
     font-size: 0.8em;
     letter-spacing: 0.075em;
     text-transform: uppercase;
-    padding: 0.25em 0.75em 1em 0.75em;
+    padding: 5em 0.75em 1em 0.75em;
   }
 
   #navPanel .link {
